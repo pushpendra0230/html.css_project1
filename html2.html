@@ -333,6 +333,178 @@ a:hover {
   align-items: center;
   justify-content: center;
 }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+.planet {
+  margin-top: 0%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 90px ;
+    color: #000000;
+}
+
+/* Portfolio Section */
+.portfolio {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.portfolio img {
+    width: 320px;
+    height: 240px;
+    object-fit: cover;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(255, 255, 255, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfolio img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(255, 255, 255, 0.2);
+}
+
+/* Button Container */
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.letter-button {
+    background-color: #ffffff;
+    color: #000000;
+    font-size: 16px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.letter-button:hover {
+    background-color: #ffffff;
+}
+
+.like-text {
+    font-size: 16px;
+    color: #000000;
+    font-weight: bold;
+}
+footer {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 30px 10px;
+    font-size: 14px;
+}
+
+/* Footer Top Section */
+.footer-top {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    border-bottom: 1px solid #000000;
+    padding-bottom: 20px;
+}
+
+.footer-top .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #000000;
+    margin-left: 20px;
+}
+
+.footer-top nav ul {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.footer-top nav ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-top nav ul li a:hover {
+    color: #000000;
+}
+
+.social-icons a {
+    color: #000000;
+    font-size: 18px;
+    margin-right: 15px;
+    transition: color 0.3s ease;
+}
+
+.social-icons a:hover {
+    color: #000000;
+}
+.footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 20px;
+    padding-top: 20px;
+}
+
+.footer-bottom p {
+    margin-left: 20px;
+}
+
+.footer-bottom ul {
+    list-style: none;
+    display: flex;
+    gap: 10px;
+}
+
+.footer-bottom ul li a {
+    color: #000000;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-bottom ul li a:hover {
+    color: #000000;
+}
+@media (max-width: 768px) {
+    .footer-top,
+    .footer-bottom {
+        flex-direction: column;
+        text-align: center;
+    }
+    .portfolio {
+        gap: 15px;
+    }
+    .portfolio img {
+        width: 100%;
+        max-width: 320px;
+    }
+    .footer-top nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .social-icons {
+        margin-top: 10px;
+    }
+}
+</style>
 </style>
 </head>
 <body>
@@ -436,5 +608,62 @@ a:hover {
         <p>Creating visually & eye-catching websites 🔥</p>
         <a href="#" class="get-in-touch-btn">Get in touch</a>
       </div>
+      <div class="planet">
+        More by Ehsan
+      </div>
+      <div class="portfolio">
+        <img src="https://cdn.dribbble.com/users/5872926/screenshots/16352162/media/9b993f2354954c31534e2805cd21fe75.png?format=webp&resize=320x240&vertical=center" alt="Design 1">
+        <img src="https://cdn.dribbble.com/userupload/15844238/file/original-cbfa9038cb06c51f7b0402501f91c387.jpg?format=webp&resize=320x240&vertical=center" alt="Design 2">
+        <img src="https://cdn.dribbble.com/userupload/15896952/file/original-a00a39021c4cbe8c4d153104f8193f63.jpg?crop=0x0-4800x3600&format=webp&resize=320x240&vertical=center" alt="Design 3">
+        <img src="https://cdn.dribbble.com/userupload/2550154/file/original-51333968b7e803db55016b93b631206b.jpg?format=webp&resize=320x240&vertical=center" alt="Design 4">
+      </div>
+      <div class="button-container">
+        <button class="letter-button">L</button>
+        <button class="letter-button">F</button>
+        <span class="like-text">Like</span>
+    </div>
+    <footer>
+        <div class="footer-top">
+            <div class="logo">
+                <div class="logo">Dribbble</div>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">For Designers</a></li>
+                    <li><a href="#">Hire Talent</a></li>
+                    <li><a href="#">Inspiration</a></li>
+                    <li><a href="#">Advertising</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Careers</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </nav>
+            <div class="social-icons">
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 Dribbble</p>
+            <ul>
+                <li><a href="#">Terms</a></li>
+                <li><a href="#">Privacy</a></li>
+                <li><a href="#">Cookies</a></li>
+            </ul>
+            <ul>
+                <li><a href="#">Jobs</a></li>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Freelancers</a></li>
+                <li><a href="#">Tags</a></li>
+                <li><a href="#">Places</a></li>
+                <li><a href="#">Resources</a></li>
+            </ul>
+        </div>
+    </footer>
+    </body>
+    </html>
 </body>
 </html>
